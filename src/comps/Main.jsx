@@ -10,6 +10,8 @@ import Login from './Login'
 import Register from './Register'
 import Blog from './Blog'
 import ProductPage from './ProductPage'
+import CategoryPage from './CategoryPage'
+
 import {BrowserRouter as Router, Switch , Route} from 'react-router-dom';
 
 function Main(){
@@ -25,7 +27,8 @@ function Main(){
   <Route path="/register" exact component={Register} />
   <Route path="/blog" exact component={Blog} />
   <Route path="/cart" exact component={Cart} />
-  <Route path="/productpage" exact component={ProductPage} />
+  <Route path="/product/" component={ProductPage} />
+  <Route path="/section" component={CategoryPage} />
 
   
 </Switch>
